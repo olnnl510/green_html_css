@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>My Form</h1>
+    <form action="/login">
+      <div><input type="text" name="iuser" value="1" readonly /></div>
+      <div>
+        <input
+          type="text"
+          name="uid"
+          placeholder="user id"
+          autofocus
+          required
+        />
+      </div>
+      <div>
+        <input
+          type="password"
+          name="upw"
+          placeholder="user password"
+          required
+        />
+      </div>
+      <div>
+        <label
+          >프사 : <input type="file" name="pic" accept="image/*" multiple
+        /></label>
+        <!--accept 원하는속성만, multiple 여러개선택가능-->
+        <div>
+          <label
+            >남긴 말 <textarea cols="20" rows="10" name="cmt">bbbb</textarea>
+          </label>
+        </div>
+      </div>
+      <div>
+        <label>
+          지역 :
+          <select name="location" size="3" multiple>
+            <!--select option 항상 세트-->
+            <!--백엔드로 넘어가는 키값은 location-->
+            <option value="1">서울입니다.</option>
+            <option value="2">대전입니다.</option>
+            <option value="3" selected>대구입니다.</option>
+            <!--체크박스,라디오버튼에서는 checked-->
+            <option value="4">부산입니다.</option>
+          </select>
+        </label>
+      </div>
+      <div>
+        취미 :
+        <label
+          ><input type="checkbox" name="hobbit" value="1" checked />농구</label
+        >
+        <label><input type="checkbox" name="hobbit" value="2" />축구</label>
+        <label
+          ><input type="checkbox" name="hobbit" value="3" checked />배구</label
+        >
+        <label><input type="checkbox" name="hobbit" value="4" />탁구</label>
+      </div>
+      <div>
+        성별 :
+        <label
+          >여성<input type="radio" name="gender" value="f" checked
+        /></label>
+        <label>남성<input type="radio" name="gender" value="m" /></label
+        ><!--체크박스,라디오 value값 필수-->
+      </div>
+      <div>
+        <input type="submit" value="login" />
+        <input type="reset" value="reset" />
+      </div>
+    </form>
+  </body>
+</html>
