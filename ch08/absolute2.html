@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #back {
+        position: relative; /*absolute의 부모가 되기위해 static 대신*/
+        width: 500px;
+        height: 300px;
+        background: url("zzang9.webp") no-repeat;
+      }
+      #css3 {
+        position: absolute;
+        right: 50px;
+        bottom: 50px;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="back">
+      <div id="css3">CSS3</div>
+    </div>
+  </body>
+</html>

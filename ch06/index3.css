@@ -1,0 +1,13 @@
+ul {
+  list-style: none;
+} /*컨트롤 스페이스 */
+a {
+  text-decoration: none;
+  color: black;
+}
+div {
+  letter-spacing: 1px;
+  line-height: 40px;
+  background-color: antiquewhite;
+  text-align: center;
+}
